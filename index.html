@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Project</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">▓▓▓ ANONYMOUS ▓▓▓</h1>
+            <button id="menuBtn" class="menu-btn">☰ МЕНЮ</button>
+        </div>
+    </header>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav id="menu" class="menu hidden">
+        <button class="menu-item" onclick="showSection('main')">🏠 Главная</button>
+        <button class="menu-item" onclick="showSection('history')">📖 История</button>
+        <button class="menu-item" onclick="showSection('tools')">🔐 Инструменты</button>
+        <button class="menu-item" onclick="showSection('telegram')">✈️ Telegram</button>
+        <button class="menu-item" onclick="showSection('about')">ℹ️ О сайте</button>
+    </nav>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="container">
+
+        <!-- ГЛАВНАЯ СТРАНИЦА -->
+        <section id="main" class="section active">
+            <div class="box">
+                <h1>🔥 ДОБРО ПОЖАЛОВАТЬ</h1>
+                <div class="box-content">
+                    <p>Этот сайт посвящен культуре <b>Anonymous</b> и основам кибербезопасности.</p>
+                    <p>Здесь вы найдете информацию о:</p>
+                    <ul class="list">
+                        <li>📚 Истории Anonymous</li>
+                        <li>🔐 Инструментах маскировки</li>
+                        <li>🛡️ Защите Telegram</li>
+                        <li>💻 Основах безопасности в сети</li>
+                    </ul>
+                    <p class="warning">⚠️ Информация предназначена только в образовательных целях!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ИСТОРИЯ -->
+        <section id="history" class="section">
+            <div class="box">
+                <h1>📖 ОТКУДА ПОЯВИЛОСЬ СЛОВО ANONYMOUS</h1>
+                <div class="box-content">
+                    <div class="image-placeholder">
+                        <span>🎭</span>
+                        <p>ANONYMOUS</p>
+                    </div>
+                    <p><b>Термин зародился в 2003 году</b> на имиджборде 4chan.</p>
+                    
+                    <h3>📋 Правила сайта</h3>
+                    <p>На этом форуме пользователи могли писать сообщения без регистрации. Если автор не подписывал пост, система автоматически ставила подпись <code>Anonymous</code></p>
+                    
+                    <h3>🧠 Общий псевдоним</h3>
+                    <p>Со временем пользователи начали шутить, что Anonymous - это один огромный всемогущий человек, обладающий коллективным разумом.</p>
+                    
+                    <h3>🌍 Эволюция</h3>
+                    <p>К 2008 году Anonymous превратился из интернет-шутки в символ хакерского активизма. Участники использовали маску Guy Fawkes как символ анонимности и восстания против цензуры.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ИНСТРУМЕНТЫ -->
+        <section id="tools" class="section">
+            <div class="box">
+                <h1>🔐 ИНСТРУМЕНТЫ ДЛЯ МАСКИРОВКИ СЕТИ</h1>
+                <div class="box-content">
+                    <div class="image-placeholder">
+                        <span>🔒</span>
+                        <p>БЕЗОПАСНОСТЬ</p>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h3>🌐 VPN (Виртуальная частная сеть)</h3>
+                        <ul>
+                            <li>✅ Скрывает реальный IP-адрес</li>
+                            <li>✅ Шифрует весь интернет-трафик</li>
+                            <li>✅ Защи��ает в публичных сетях Wi-Fi</li>
+                            <li>✅ Позволяет обходить географические блокировки</li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-card">
+                        <h3>🧅 Браузер Tor</h3>
+                        <ul>
+                            <li>✅ Маршрутизирует трафик через три случайных узла</li>
+                            <li>✅ Стирает историю после закрытия вкладки</li>
+                            <li>✅ Защищает от снятия отпечатка браузера</li>
+                            <li>✅ Предоставляет доступ к .onion ресурсам</li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-card">
+                        <h3>🔄 Прокси-серверы</h3>
+                        <ul>
+                            <li>✅ Подменяют IP-адрес для конкретных программ</li>
+                            <li>✅ Быстрее, чем Tor</li>
+                            <li>⚠️ Не шифруют весь трафик устройства</li>
+                            <li>⚠️ Требуют тщательного выбора провайдера</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ЗАЩИТА TELEGRAM -->
+        <section id="telegram" class="section">
+            <div class="box">
+                <h1>✈️ ЗАЩИТА ПЕРСОНАЛЬНОГО АККАУНТА В TELEGRAM</h1>
+                <div class="box-content">
+                    <div class="image-placeholder">
+                        <span>🔐</span>
+                        <p>TELEGRAM SECURITY</p>
+                    </div>
+
+                    <div class="protection-item">
+                        <h3>🔑 Двухэтапная аутентификация</h3>
+                        <p><code>Настройки → Конфиденциальность → Двухэтапная аутентификация</code></p>
+                        <p>Ставишь пароль - защита от угона аккаунта</p>
+                    </div>
+
+                    <div class="protection-item">
+                        <h3>📱 Спрятать номер телефона</h3>
+                        <p><code>Настройки → Конфиденциальность → Номер телефона → Никто</code></p>
+                        <p>Скроет ваш номер от других пользователей</p>
+                    </div>
+
+                    <div class="protection-item">
+                        <h3>💻 Проверить активные сеансы</h3>
+                        <p><code>Настройки → Устройства</code></p>
+                        <p>Вырубить все лишние телефоны или ПК</p>
+                    </div>
+
+                    <div class="protection-item">
+                        <h3>🔐 Код-пароль на Telegram</h3>
+                        <p><code>Настройки → Конфиденциальность → Код-пароль</code></p>
+                        <p>Защита от чтения сообщений с вашего телефона</p>
+                    </div>
+
+                    <div class="protection-item warning-card">
+                        <h3>⚠️ Не кликать по левым ссылкам</h3>
+                        <p>⛔ 90% взломов происходят через посторонние ссылки</p>
+                        <p>Проверяйте отправителя перед открытием ссылок!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О САЙТЕ -->
+        <section id="about" class="section">
+            <div class="box">
+                <h1>ℹ️ О САЙТЕ</h1>
+                <div class="box-content">
+                    <p>Этот проект создан в образовательных целях для ознакомления с культурой интернета и основами кибербезопасности.</p>
+                    
+                    <h3>📋 Важно знать:</h3>
+                    <ul class="list">
+                        <li>Вся информация предоставляется в образовательных целях</li>
+                        <li>Используйте знания ответственно</li>
+                        <li>Соблюдайте законодательство вашей страны</li>
+                        <li>Защита своей приватности - это право каждого</li>
+                    </ul>
+
+                    <h3>🛠️ Технологии</h3>
+                    <p>Сайт построен с использованием:</p>
+                    <ul class="list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ванильный)</li>
+                        <li>Telegram Web App API</li>
+                    </ul>
+
+                    <h3>📞 Контакты</h3>
+                    <p>Проект доступен на GitHub: <code>kiborg2000/anonymous-project</code></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 Anonymous Project | Образовательный материал</p>
+        <p class="footer-small">Используйте интернет ответственно 🔐</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
